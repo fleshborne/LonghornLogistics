@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 const express = require('express');
 const db = require('./models');
 const routes = require('./routes');
@@ -14,8 +15,9 @@ app.use('/', routes);
 
 // Sync sequelize models then start Express app
 // =============================================
-db.sequelize.sync().then(() => {
-  app.listen(PORT, () => {
-    console.log(`App listening on PORT ${PORT}`);
-  });
+// db.sequelize.sync().then(() => {
+
+// });
+app.listen(PORT, () => {
+  console.log(`App listening on PORT ${PORT}`);
 });
